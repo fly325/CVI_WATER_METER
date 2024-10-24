@@ -1,0 +1,6 @@
+-inrc c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Debug\resources.in.rc
+-outrc c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Debug\resources.out.rc
+-outdef c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Debug\DLLProject.dll.defs
+-indefprot c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Debug\DLLProject.obj.cvidefprots
+-dllName DLLProject.dll
+-addNITypeInfo 

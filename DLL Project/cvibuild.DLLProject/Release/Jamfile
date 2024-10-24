@@ -1,0 +1,54 @@
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2020\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "DLLProject.c" = "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project" ;
+LOCATE on "DLLProject.h" = "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project" ;
+Object "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.obj" : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\DLLProject.c" ;
+FILENUM on "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.obj" = 1 ;
+DEFPROTS on "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.obj" = "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.obj" = "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.obj.out" ;
+PrjObjects += "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.obj" ;
+Object "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.h.hdefs" : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\DLLProject.h" ;
+FILENUM on "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.h.hdefs" = 2 ;
+OUTFILE on "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.h.hdefs" = "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.h.hdefs.out" ;
+PreLinkInputs += "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.out.rc" ;
+PreLinkOutputs += "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.dll" : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.dll.defs" ;
+Object "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.res" : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.out.rc" ;
+Depends "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.res" "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.res" : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\manifest.xml" ;
+MainFromObjects "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.dll" : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\link_options.txt" ;
+Depends "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.dll" : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\dependencies.lnk.in" ;
+Depends "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.dll" : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\resources.res" ;
+Depends all : "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\DLLProject.dll" ;

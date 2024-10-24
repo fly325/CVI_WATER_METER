@@ -1,0 +1,20 @@
+[channelHeaders]
+Class="Var"
+
+
+[sendAlert]
+Class="Function"
+Prototype="void sendAlert(char cmd, int com) __declspec(dllexport);"
+
+[SaveXLSX]
+Class="Function"
+Prototype="void SaveXLSX(struct datastr Data) __declspec(dllexport);"
+
+[LoadXLSX]
+Class="Function"
+Prototype="void LoadXLSX(double *timeT, double *dataT, double *UpLimitT, double *LowLimitT) __declspec(dllexport);"
+
+[UpdateLogDLL]
+Class="Function"
+Prototype="void UpdateLogDLL(int data, unsigned char cmd, char *stringPrint, char *Date_string) __declspec(dllexport);"
+

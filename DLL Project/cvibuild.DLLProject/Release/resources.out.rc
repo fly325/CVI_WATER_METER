@@ -1,0 +1,187 @@
+#pragma code_page(65001)
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\Users\\edenm\\Afeka College Of Engineering\\CVI 2 - General\\Homework\\project\\DLL Project\\cvibuild.DLLProject\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DLLProject (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "DLLProject\0"
+            VALUE "LegalCopyright", "Copyright   2024\0"
+            VALUE "OriginalFilename", "DLLProject.dll\0"
+            VALUE "ProductName", " DLLProject\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+CVIDLLexports CVIDLLprototypes
+{
+   "long ExcelRpt_ActivateWorksheet(CAObjHandle worksheetHandle);"
+   "\n",
+   "long ExcelRpt_AddHyperlink(CAObjHandle worksheetHandle, const char *cellRange, const char *address, const char *screenTip);"
+   "\n",
+   "long ExcelRpt_AllowCSSSupport(CAObjHandle workbookHandle, int value);"
+   "\n",
+   "long ExcelRpt_AllowPNGSupport(CAObjHandle workbookHandle, int value);"
+   "\n",
+   "long ExcelRpt_AllowVMLSupport(CAObjHandle workbookHandle, int value);"
+   "\n",
+   "long ExcelRpt_ApplicationNew(int makeVisible, CAObjHandle *applicationHandle);"
+   "\n",
+   "long ExcelRpt_ApplicationQuit(CAObjHandle applicationHandle);"
+   "\n",
+   "long ExcelRpt_ChartActivate(CAObjHandle chartHandle);"
+   "\n",
+   "long ExcelRpt_ChartAddtoWorksheet(CAObjHandle worksheetHandle, double left, double top, double width, double height, CAObjHandle *chartHandle);"
+   "\n",
+   "long ExcelRpt_ChartDelete(CAObjHandle chartHandle);"
+   "\n",
+   "long ExcelRpt_ChartNew(CAObjHandle workbookHandle, int insertBeforeIndex, CAObjHandle *chartHandle);"
+   "\n",
+   "long ExcelRpt_ChartPrint(CAObjHandle chartHandle, int displayPrintDialog);"
+   "\n",
+   "long ExcelRpt_ChartSetSourceRange(CAObjHandle chartHandle, CAObjHandle worksheetHandle, const char *cellRange);"
+   "\n",
+   "long ExcelRpt_ChartWizard(CAObjHandle chartHandle, CAObjHandle worksheetHandle, const char *sourceRange, enum ExREnum_ExChartWizardGallery chartGallery, int format, enum ExREnum_ExRowCol plotBy, int categoryLabels, int seriesLabels, int hasLegend, const char *title, const char *categoryAxisTitle, const char *valueAxisTitle, const char *extraAxisTitle);"
+   "\n",
+   "long ExcelRpt_DeleteColumn(CAObjHandle worksheetHandle, int columnIndex, int numColumns);"
+   "\n",
+   "long ExcelRpt_DeleteRow(CAObjHandle worksheetHandle, int rowIndex, int numRows);"
+   "\n",
+   "long ExcelRpt_Fill(CAObjHandle worksheetHandle, enum ExREnum_ExFillOptions direction, const char *cellRange);"
+   "\n",
+   "long ExcelRpt_Find(CAObjHandle worksheetHandle, enum ExREnum_ExDataType dataType, const void *data, const char *afterCell, enum ExREnum_ExFindLookIn lookIn, enum ExREnum_ExLookAt lookAt, enum ExREnum_ExSearchOrder searchOrder, enum ExREnum_ExSearchDirection searchDirection, int matchCase, int matchByte, char foundRange[]);"
+   "\n",
+   "long ExcelRpt_FreeStringData(char **data, unsigned int count);"
+   "\n",
+   "long ExcelRpt_GetApplicationAttribute(CAObjHandle applicationHandle, int attribute, void *attributeValue);"
+   "\n",
+   "long ExcelRpt_GetCellDataType(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType *dataType);"
+   "\n",
+   "long ExcelRpt_GetCellRangeAttribute(CAObjHandle worksheetHandle, const char *cellRange, int attribute, void *attributeValue);"
+   "\n",
+   "long ExcelRpt_GetCellValue(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType dataType, void *dataValue);"
+   "\n",
+   "long ExcelRpt_GetCellValueStringLen(CAObjHandle worksheetHandle, const char *cellRange, int *length);"
+   "\n",
+   "long ExcelRpt_GetChartAttribute(CAObjHandle chartHandle, int attribute, void *attributeValue);"
+   "\n",
+   "long ExcelRpt_GetChartAxisAttribute(CAObjHandle chartHandle, enum ExREnum_ExAxisType axisType, enum ExREnum_ExAxisGroup axisGroup, int attribute, void *attributeValue);"
+   "\n",
+   "long ExcelRpt_GetChartsheetFromIndex(CAObjHandle workbookHandle, int Index, CAObjHandle *chartsheetHandle);"
+   "\n",
+   "long ExcelRpt_GetChartsheetFromName(CAObjHandle workbookHandle, const char *chartName, CAObjHandle *chartsheetHandle);"
+   "\n",
+   "long ExcelRpt_GetEmbeddedChartFromIndex(CAObjHandle worksheetHandle, int Index, CAObjHandle *chartHandle);"
+   "\n",
+   "long ExcelRpt_GetEmbeddedChartFromName(CAObjHandle worksheetHandle, const char *chartName, CAObjHandle *chartHandle);"
+   "\n",
+   "struct ERRORINFO *ExcelRpt_GetErrorInfo();"
+   "\n",
+   "long ExcelRpt_GetNumCellsInRange(CAObjHandle worksheetHandle, const char *cellRange, int *numCells);"
+   "\n",
+   "long ExcelRpt_GetRangeDataType(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType *dataType);"
+   "\n",
+   "long ExcelRpt_GetSheetTypeFromIndex(CAObjHandle workbookHandle, int Index, enum ExREnum_ExSheetType *sheetType);"
+   "\n",
+   "long ExcelRpt_GetWorkbookAttribute(CAObjHandle workbookHandle, int attribute, void *attributeValue);"
+   "\n",
+   "long ExcelRpt_GetWorksheetAttribute(CAObjHandle worksheetHandle, int attribute, void *attributeValue);"
+   "\n",
+   "long ExcelRpt_GetWorksheetFromIndex(CAObjHandle workbookHandle, int Index, CAObjHandle *worksheetHandle);"
+   "\n",
+   "long ExcelRpt_GetWorksheetFromName(CAObjHandle workbookHandle, const char *worksheetName, CAObjHandle *worksheetHandle);"
+   "\n",
+   "long ExcelRpt_InsertColumn(CAObjHandle worksheetHandle, int insertBeforeColumnIndex, int numColumns);"
+   "\n",
+   "long ExcelRpt_InsertPicture(CAObjHandle worksheetHandle, const char *fileName, int top, int left, int width, int height);"
+   "\n",
+   "long ExcelRpt_InsertRow(CAObjHandle worksheetHandle, int insertBeforeRowIndex, int numRows);"
+   "\n",
+   "long ExcelRpt_RangeBorder(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExLineStyle Linestyle, long color, enum ExREnum_ExBorderWeight weight, unsigned char edges);"
+   "\n",
+   "long ExcelRpt_RangeDelete(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDeleteShiftDirection shiftDirection);"
+   "\n",
+   "long ExcelRpt_RangeInsert(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExInsertShiftDirection shiftDirection);"
+   "\n",
+   "long ExcelRpt_RangePrint(CAObjHandle worksheetHandle, const char *cellRange, int displayDialog);"
+   "\n",
+   "long ExcelRpt_RangeSelect(CAObjHandle worksheetHandle, const char *cellRange);"
+   "\n",
+   "long ExcelRpt_ReadData(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType dataType, void *data);"
+   "\n",
+   "long ExcelRpt_ReadDataToTableControl(CAObjHandle worksheetHandle, const char *cellRange, struct Point startpoint, enum ExREnum_ExInsertMode insertmode, int panel, int control);"
+   "\n",
+   "long ExcelRpt_RunMacro(CAObjHandle applicationHandle, const char *macroName);"
+   "\n",
+   "long ExcelRpt_SetApplicationAttribute(CAObjHandle applicationHandle, int attribute, ...);"
+   "\n",
+   "long ExcelRpt_SetCellRangeAttribute(CAObjHandle worksheetHandle, const char *cellRange, int attribute, ...);"
+   "\n",
+   "long ExcelRpt_SetCellValue(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType dataType, ...);"
+   "\n",
+   "long ExcelRpt_SetChartAttribute(CAObjHandle chartHandle, int attribute, ...);"
+   "\n",
+   "long ExcelRpt_SetChartAxisAttribute(CAObjHandle chartHandle, enum ExREnum_ExAxisType axisType, enum ExREnum_ExAxisGroup axisGroup, int attribute, ...);"
+   "\n",
+   "long ExcelRpt_SetEncoding(CAObjHandle workbookHandle, int encoding);"
+   "\n",
+   "long ExcelRpt_SetMinimumMonitor(CAObjHandle workbookHandle, long resolution, long pixelsPerInch);"
+   "\n",
+   "long ExcelRpt_SetWorksheetAttribute(CAObjHandle worksheetHandle, int attribute, ...);"
+   "\n",
+   "long ExcelRpt_Show(CAObjHandle worksheetHandle, const char *cellRange);"
+   "\n",
+   "long ExcelRpt_Sort(CAObjHandle worksheetHandle, const char *cellRange, const char *key1, enum ExREnum_ExSortOrder sortOrder1, const char *key2, enum ExREnum_ExSortOrder sortOrder2, enum ExREnum_ExSortOrientation sortOrientation, enum ExREnum_ExYesNo header);"
+   "\n",
+   "long ExcelRpt_WorkbookClose(CAObjHandle workbookHandle, int saveChanges);"
+   "\n",
+   "long ExcelRpt_WorkbookNew(CAObjHandle applicationHandle, CAObjHandle *workbookHandle);"
+   "\n",
+   "long ExcelRpt_WorkbookOpen(CAObjHandle applicationHandle, const char *fileName, CAObjHandle *workbookHandle);"
+   "\n",
+   "long ExcelRpt_WorkbookSave(CAObjHandle workbookHandle, const char *fileName, enum ExREnum_ExFileFormat format);"
+   "\n",
+   "long ExcelRpt_WorksheetDelete(CAObjHandle worksheetHandle);"
+   "\n",
+   "long ExcelRpt_WorksheetNew(CAObjHandle workbookHandle, int insertBeforeIndex, CAObjHandle *worksheetHandle);"
+   "\n",
+   "long ExcelRpt_WriteData(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType dataType, unsigned int dim1, unsigned int dim2, const void *data);"
+   "\n",
+   "long ExcelRpt_WriteDataFromTableControl(CAObjHandle worksheetHandle, const char *cellRange, int panel, int control);"
+   "\n",
+   "void LoadXLSX(double *timeT, double *dataT, double *UpLimitT, double *LowLimitT) __declspec(dllexport);"
+   "\n",
+   "void SaveXLSX(struct datastr Data) __declspec(dllexport);"
+   "\n",
+   "void UpdateLogDLL(int data, unsigned char cmd, char *stringPrint, char *Date_string) __declspec(dllexport);"
+   "\n",
+   "void sendAlert(char cmd, int com) __declspec(dllexport);"
+   "\n",
+   "\0"
+}

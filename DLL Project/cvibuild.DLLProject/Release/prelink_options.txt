@@ -1,0 +1,7 @@
+-inrc c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Release\resources.in.rc
+-outrc c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Release\resources.out.rc
+-inhdef c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Release\DLLProject.h.hdefs
+-outdef c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Release\DLLProject.dll.defs
+-indefprot c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Release\DLLProject.obj.cvidefprots
+-indefprot c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\cvibuild.DLLProject\Release\excelreport.obj.cvidefprots
+-dllName DLLProject.dll

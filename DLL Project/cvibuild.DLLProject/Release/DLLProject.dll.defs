@@ -1,0 +1,8 @@
+LIBRARY DLLProject
+
+EXPORTS
+UpdateLogDLL
+LoadXLSX
+SaveXLSX
+sendAlert
+channelHeaders

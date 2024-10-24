@@ -1,0 +1,335 @@
+[ExcelRpt_GetErrorInfo]
+Class="Function"
+Prototype="struct ERRORINFO *ExcelRpt_GetErrorInfo();"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:61:21"
+
+[ExcelRpt_ApplicationNew]
+Class="Function"
+Prototype="long ExcelRpt_ApplicationNew(int makeVisible, CAObjHandle *applicationHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:79:17"
+
+[ExcelRpt_ApplicationQuit]
+Class="Function"
+Prototype="long ExcelRpt_ApplicationQuit(CAObjHandle applicationHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:118:17"
+
+[ExcelRpt_RunMacro]
+Class="Function"
+Prototype="long ExcelRpt_RunMacro(CAObjHandle applicationHandle, const char *macroName);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:135:17"
+
+[ExcelRpt_SetApplicationAttribute]
+Class="Function"
+Prototype="long ExcelRpt_SetApplicationAttribute(CAObjHandle applicationHandle, int attribute, ...);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:166:19"
+
+[ExcelRpt_GetApplicationAttribute]
+Class="Function"
+Prototype="long ExcelRpt_GetApplicationAttribute(CAObjHandle applicationHandle, int attribute, void *attributeValue);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:225:17"
+
+[ExcelRpt_WorkbookNew]
+Class="Function"
+Prototype="long ExcelRpt_WorkbookNew(CAObjHandle applicationHandle, CAObjHandle *workbookHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:276:17"
+
+[ExcelRpt_WorkbookOpen]
+Class="Function"
+Prototype="long ExcelRpt_WorkbookOpen(CAObjHandle applicationHandle, const char *fileName, CAObjHandle *workbookHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:306:17"
+
+[ExcelRpt_WorkbookClose]
+Class="Function"
+Prototype="long ExcelRpt_WorkbookClose(CAObjHandle workbookHandle, int saveChanges);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:340:17"
+
+[ExcelRpt_WorkbookSave]
+Class="Function"
+Prototype="long ExcelRpt_WorkbookSave(CAObjHandle workbookHandle, const char *fileName, enum ExREnum_ExFileFormat format);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:358:17"
+
+[ExcelRpt_SetMinimumMonitor]
+Class="Function"
+Prototype="long ExcelRpt_SetMinimumMonitor(CAObjHandle workbookHandle, long resolution, long pixelsPerInch);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:394:17"
+
+[ExcelRpt_AllowVMLSupport]
+Class="Function"
+Prototype="long ExcelRpt_AllowVMLSupport(CAObjHandle workbookHandle, int value);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:422:17"
+
+[ExcelRpt_AllowCSSSupport]
+Class="Function"
+Prototype="long ExcelRpt_AllowCSSSupport(CAObjHandle workbookHandle, int value);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:447:17"
+
+[ExcelRpt_AllowPNGSupport]
+Class="Function"
+Prototype="long ExcelRpt_AllowPNGSupport(CAObjHandle workbookHandle, int value);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:472:17"
+
+[ExcelRpt_SetEncoding]
+Class="Function"
+Prototype="long ExcelRpt_SetEncoding(CAObjHandle workbookHandle, int encoding);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:496:17"
+
+[ExcelRpt_GetWorksheetFromIndex]
+Class="Function"
+Prototype="long ExcelRpt_GetWorksheetFromIndex(CAObjHandle workbookHandle, int Index, CAObjHandle *worksheetHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:535:17"
+
+[ExcelRpt_GetChartsheetFromIndex]
+Class="Function"
+Prototype="long ExcelRpt_GetChartsheetFromIndex(CAObjHandle workbookHandle, int Index, CAObjHandle *chartsheetHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:593:17"
+
+[ExcelRpt_GetChartsheetFromName]
+Class="Function"
+Prototype="long ExcelRpt_GetChartsheetFromName(CAObjHandle workbookHandle, const char *chartName, CAObjHandle *chartsheetHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:641:17"
+
+[ExcelRpt_GetWorksheetFromName]
+Class="Function"
+Prototype="long ExcelRpt_GetWorksheetFromName(CAObjHandle workbookHandle, const char *worksheetName, CAObjHandle *worksheetHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:697:17"
+
+[ExcelRpt_GetSheetTypeFromIndex]
+Class="Function"
+Prototype="long ExcelRpt_GetSheetTypeFromIndex(CAObjHandle workbookHandle, int Index, enum ExREnum_ExSheetType *sheetType);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:752:17"
+
+[ExcelRpt_GetWorkbookAttribute]
+Class="Function"
+Prototype="long ExcelRpt_GetWorkbookAttribute(CAObjHandle workbookHandle, int attribute, void *attributeValue);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:802:17"
+
+[ExcelRpt_WorksheetNew]
+Class="Function"
+Prototype="long ExcelRpt_WorksheetNew(CAObjHandle workbookHandle, int insertBeforeIndex, CAObjHandle *worksheetHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:849:17"
+
+[ExcelRpt_WorksheetDelete]
+Class="Function"
+Prototype="long ExcelRpt_WorksheetDelete(CAObjHandle worksheetHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:909:17"
+
+[ExcelRpt_InsertRow]
+Class="Function"
+Prototype="long ExcelRpt_InsertRow(CAObjHandle worksheetHandle, int insertBeforeRowIndex, int numRows);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:926:17"
+
+[ExcelRpt_InsertColumn]
+Class="Function"
+Prototype="long ExcelRpt_InsertColumn(CAObjHandle worksheetHandle, int insertBeforeColumnIndex, int numColumns);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:963:17"
+
+[ExcelRpt_DeleteRow]
+Class="Function"
+Prototype="long ExcelRpt_DeleteRow(CAObjHandle worksheetHandle, int rowIndex, int numRows);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1000:17"
+
+[ExcelRpt_DeleteColumn]
+Class="Function"
+Prototype="long ExcelRpt_DeleteColumn(CAObjHandle worksheetHandle, int columnIndex, int numColumns);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1038:17"
+
+[ExcelRpt_InsertPicture]
+Class="Function"
+Prototype="long ExcelRpt_InsertPicture(CAObjHandle worksheetHandle, const char *fileName, int top, int left, int width, int height);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1076:17"
+
+[ExcelRpt_ActivateWorksheet]
+Class="Function"
+Prototype="long ExcelRpt_ActivateWorksheet(CAObjHandle worksheetHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1102:17"
+
+[ExcelRpt_Find]
+Class="Function"
+Prototype="long ExcelRpt_Find(CAObjHandle worksheetHandle, enum ExREnum_ExDataType dataType, const void *data, const char *afterCell, enum ExREnum_ExFindLookIn lookIn, enum ExREnum_ExLookAt lookAt, enum ExREnum_ExSearchOrder searchOrder, enum ExREnum_ExSearchDirection searchDirection, int matchCase, int matchByte, char foundRange[]);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1119:17"
+
+[ExcelRpt_GetEmbeddedChartFromIndex]
+Class="Function"
+Prototype="long ExcelRpt_GetEmbeddedChartFromIndex(CAObjHandle worksheetHandle, int Index, CAObjHandle *chartHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1239:17"
+
+[ExcelRpt_GetEmbeddedChartFromName]
+Class="Function"
+Prototype="long ExcelRpt_GetEmbeddedChartFromName(CAObjHandle worksheetHandle, const char *chartName, CAObjHandle *chartHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1275:17"
+
+[ExcelRpt_SetWorksheetAttribute]
+Class="Function"
+Prototype="long ExcelRpt_SetWorksheetAttribute(CAObjHandle worksheetHandle, int attribute, ...);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1330:19"
+
+[ExcelRpt_GetWorksheetAttribute]
+Class="Function"
+Prototype="long ExcelRpt_GetWorksheetAttribute(CAObjHandle worksheetHandle, int attribute, void *attributeValue);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1372:17"
+
+[ExcelRpt_RangeSelect]
+Class="Function"
+Prototype="long ExcelRpt_RangeSelect(CAObjHandle worksheetHandle, const char *cellRange);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1445:17"
+
+[ExcelRpt_RangeBorder]
+Class="Function"
+Prototype="long ExcelRpt_RangeBorder(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExLineStyle Linestyle, long color, enum ExREnum_ExBorderWeight weight, unsigned char edges);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1475:17"
+
+[ExcelRpt_AddHyperlink]
+Class="Function"
+Prototype="long ExcelRpt_AddHyperlink(CAObjHandle worksheetHandle, const char *cellRange, const char *address, const char *screenTip);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1616:17"
+
+[ExcelRpt_RangePrint]
+Class="Function"
+Prototype="long ExcelRpt_RangePrint(CAObjHandle worksheetHandle, const char *cellRange, int displayDialog);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1660:17"
+
+[ExcelRpt_Fill]
+Class="Function"
+Prototype="long ExcelRpt_Fill(CAObjHandle worksheetHandle, enum ExREnum_ExFillOptions direction, const char *cellRange);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1716:17"
+
+[ExcelRpt_Sort]
+Class="Function"
+Prototype="long ExcelRpt_Sort(CAObjHandle worksheetHandle, const char *cellRange, const char *key1, enum ExREnum_ExSortOrder sortOrder1, const char *key2, enum ExREnum_ExSortOrder sortOrder2, enum ExREnum_ExSortOrientation sortOrientation, enum ExREnum_ExYesNo header);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1761:17"
+
+[ExcelRpt_RangeInsert]
+Class="Function"
+Prototype="long ExcelRpt_RangeInsert(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExInsertShiftDirection shiftDirection);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1842:17"
+
+[ExcelRpt_RangeDelete]
+Class="Function"
+Prototype="long ExcelRpt_RangeDelete(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDeleteShiftDirection shiftDirection);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1873:17"
+
+[ExcelRpt_Show]
+Class="Function"
+Prototype="long ExcelRpt_Show(CAObjHandle worksheetHandle, const char *cellRange);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1904:17"
+
+[ExcelRpt_WriteData]
+Class="Function"
+Prototype="long ExcelRpt_WriteData(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType dataType, unsigned int dim1, unsigned int dim2, const void *data);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:1934:17"
+
+[ExcelRpt_ReadData]
+Class="Function"
+Prototype="long ExcelRpt_ReadData(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType dataType, void *data);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2019:17"
+
+[ExcelRpt_FreeStringData]
+Class="Function"
+Prototype="long ExcelRpt_FreeStringData(char **data, unsigned int count);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2101:17"
+
+[ExcelRpt_GetNumCellsInRange]
+Class="Function"
+Prototype="long ExcelRpt_GetNumCellsInRange(CAObjHandle worksheetHandle, const char *cellRange, int *numCells);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2122:17"
+
+[ExcelRpt_GetRangeDataType]
+Class="Function"
+Prototype="long ExcelRpt_GetRangeDataType(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType *dataType);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2160:17"
+
+[ExcelRpt_WriteDataFromTableControl]
+Class="Function"
+Prototype="long ExcelRpt_WriteDataFromTableControl(CAObjHandle worksheetHandle, const char *cellRange, int panel, int control);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2241:17"
+
+[ExcelRpt_ReadDataToTableControl]
+Class="Function"
+Prototype="long ExcelRpt_ReadDataToTableControl(CAObjHandle worksheetHandle, const char *cellRange, struct Point startpoint, enum ExREnum_ExInsertMode insertmode, int panel, int control);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2409:17"
+
+[ExcelRpt_GetCellDataType]
+Class="Function"
+Prototype="long ExcelRpt_GetCellDataType(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType *dataType);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2594:17"
+
+[ExcelRpt_GetCellValueStringLen]
+Class="Function"
+Prototype="long ExcelRpt_GetCellValueStringLen(CAObjHandle worksheetHandle, const char *cellRange, int *length);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2645:17"
+
+[ExcelRpt_GetCellValue]
+Class="Function"
+Prototype="long ExcelRpt_GetCellValue(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType dataType, void *dataValue);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2699:17"
+
+[ExcelRpt_SetCellValue]
+Class="Function"
+Prototype="long ExcelRpt_SetCellValue(CAObjHandle worksheetHandle, const char *cellRange, enum ExREnum_ExDataType dataType, ...);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2754:19"
+
+[ExcelRpt_SetCellRangeAttribute]
+Class="Function"
+Prototype="long ExcelRpt_SetCellRangeAttribute(CAObjHandle worksheetHandle, const char *cellRange, int attribute, ...);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2844:19"
+
+[ExcelRpt_GetCellRangeAttribute]
+Class="Function"
+Prototype="long ExcelRpt_GetCellRangeAttribute(CAObjHandle worksheetHandle, const char *cellRange, int attribute, void *attributeValue);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:2990:17"
+
+[ExcelRpt_ChartNew]
+Class="Function"
+Prototype="long ExcelRpt_ChartNew(CAObjHandle workbookHandle, int insertBeforeIndex, CAObjHandle *chartHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3162:17"
+
+[ExcelRpt_ChartAddtoWorksheet]
+Class="Function"
+Prototype="long ExcelRpt_ChartAddtoWorksheet(CAObjHandle worksheetHandle, double left, double top, double width, double height, CAObjHandle *chartHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3218:17"
+
+[ExcelRpt_ChartDelete]
+Class="Function"
+Prototype="long ExcelRpt_ChartDelete(CAObjHandle chartHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3252:17"
+
+[ExcelRpt_ChartPrint]
+Class="Function"
+Prototype="long ExcelRpt_ChartPrint(CAObjHandle chartHandle, int displayPrintDialog);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3281:17"
+
+[ExcelRpt_ChartActivate]
+Class="Function"
+Prototype="long ExcelRpt_ChartActivate(CAObjHandle chartHandle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3340:17"
+
+[ExcelRpt_ChartSetSourceRange]
+Class="Function"
+Prototype="long ExcelRpt_ChartSetSourceRange(CAObjHandle chartHandle, CAObjHandle worksheetHandle, const char *cellRange);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3369:17"
+
+[ExcelRpt_ChartWizard]
+Class="Function"
+Prototype="long ExcelRpt_ChartWizard(CAObjHandle chartHandle, CAObjHandle worksheetHandle, const char *sourceRange, enum ExREnum_ExChartWizardGallery chartGallery, int format, enum ExREnum_ExRowCol plotBy, int categoryLabels, int seriesLabels, int hasLegend, const char *title, const char *categoryAxisTitle, const char *valueAxisTitle, const char *extraAxisTitle);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3397:17"
+
+[ExcelRpt_SetChartAttribute]
+Class="Function"
+Prototype="long ExcelRpt_SetChartAttribute(CAObjHandle chartHandle, int attribute, ...);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3475:19"
+
+[ExcelRpt_GetChartAttribute]
+Class="Function"
+Prototype="long ExcelRpt_GetChartAttribute(CAObjHandle chartHandle, int attribute, void *attributeValue);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3705:17"
+
+[ExcelRpt_SetChartAxisAttribute]
+Class="Function"
+Prototype="long ExcelRpt_SetChartAxisAttribute(CAObjHandle chartHandle, enum ExREnum_ExAxisType axisType, enum ExREnum_ExAxisGroup axisGroup, int attribute, ...);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:3940:19"
+
+[ExcelRpt_GetChartAxisAttribute]
+Class="Function"
+Prototype="long ExcelRpt_GetChartAxisAttribute(CAObjHandle chartHandle, enum ExREnum_ExAxisType axisType, enum ExREnum_ExAxisGroup axisGroup, int attribute, void *attributeValue);"
+SourceLocation="c:\Program Files (x86)\National Instruments\CVI2020\toolslib\activex\excel\excelreport.c:4103:17"
+

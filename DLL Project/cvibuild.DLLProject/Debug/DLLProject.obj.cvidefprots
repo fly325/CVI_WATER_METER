@@ -1,0 +1,5 @@
+[sendAlert]
+Class="Function"
+Prototype="void sendAlert(char cmd, int com) __declspec(dllexport);"
+SourceLocation="c:\Users\edenm\Afeka College Of Engineering\CVI 2 - General\Homework\project\DLL Project\DLLProject.c:9:6"
+
